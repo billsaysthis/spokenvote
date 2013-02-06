@@ -7,7 +7,9 @@
       = proposal.hub.group_name
       &ndash;
       = proposal.hub.formatted_location
-
+    #prevNextButtns
+      = link_to raw('<i class="icon-chevron-left"></i> Previous'), '#', class: 'btn'
+      = link_to raw('Next <i class="icon-chevron-right"></i>'), '#', class: 'btn'
 
 .proposal_container{data: {proposal_id: proposal.id, hub_id: proposal.hub.id}}
   .main-proposal

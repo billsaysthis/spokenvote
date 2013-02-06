@@ -217,6 +217,9 @@ textarea { height: 100px; }
 #proposalNotFound div:last-child { background-color: #e4e4e4; text-align: center; margin-left: 0; }
 #hpContent { @extend .span11; margin-left: 20px; }
 
+#prevNextButtns .btn {
+  @extend .btn-mini; @extend .btn-bold; @extend .btn-success;
+}
 .main-proposal { overflow: auto; }
 .support_container {
   @extend .no-gutter;
