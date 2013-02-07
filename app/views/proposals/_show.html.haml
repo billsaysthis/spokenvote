@@ -4,9 +4,7 @@
       %span.label
         = total_votes.to_s + ' Total Votes'
     %h2
-      = proposal.hub.group_name
-      &ndash;
-      = proposal.hub.formatted_location
+      = link_to raw(proposal.hub.group_name + ' &ndash; ' + proposal.hub.formatted_location), proposals_path({hub_filter: proposal.hub.group_name, location_filter: proposal.hub.formatted_location})
     #prevNextButtns
       = link_to raw('<i class="icon-chevron-left"></i> Previous'), '#', class: 'btn'
       = link_to raw('Next <i class="icon-chevron-right"></i>'), '#', class: 'btn'
